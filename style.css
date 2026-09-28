@@ -1,0 +1,1064 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #D2D2D2;
+}
+
+.page {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    height: 140px;
+    background-color: #E9ECEF;
+    padding: 21px 20px 10px 20px;
+}
+
+.menu_button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.menu_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.logo_icon {
+    height: 60px;
+}
+
+.logo_icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.login_icon {
+    width: 37px;
+    height: 50px;
+}
+
+.high_el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    margin-top: 9px;
+    position: relative;
+}
+
+.search_icon {
+position: absolute;
+    left: 17px;
+    top: 13px;
+}
+
+.search input {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+    padding: 12px 15px 10px 50px;
+    outline: 0;
+}
+
+.search input::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #AAAAAA;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.search_button {
+    cursor: pointer;
+    position: absolute;
+    left: 17px;
+    top: 13px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: transparent;
+}
+
+.main_content {
+    background-color: #F4F6F9;
+    padding: 0 20px 100px 20px;
+}
+
+.breadcrumbs ol{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #676767;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #676767;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+}
+
+.main_content h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #141414;
+    padding-bottom: 20px;
+}
+
+.headline {
+     font-family: 'Manrope', sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 25px;
+     letter-spacing: 0;
+     color: #034EA2;
+     height: 50px;
+}
+
+.p_text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.info_block {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.h2_info_block {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #034EA2;
+    height: 25px;
+    margin-bottom: 19px;
+}
+
+.grid_blocks {
+    display: grid;
+    grid-template-columns: 256px 194px 171px 174px;
+    gap: 41px;
+}
+
+.blocks {
+    width: 100%;
+}
+.blocks h2 {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 25px;
+   letter-spacing: 0;
+   color: #F37021;
+}
+
+.blocks p {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0;
+   color: #000000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 19px;
+}
+
+.description h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #034EA2;
+}
+
+.description p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #000000;
+    margin: 20px 0 40px 0;
+}
+
+.description .list_one p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.description ul {
+    padding-left: 25px;
+    line-height: 25px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #034EA2;
+}
+
+.description li::marker {
+    font-size: 13px;;
+}
+
+.list_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.list_two p, ul{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.list_two span {
+    color: #F37021;
+    font-weight: 600;
+}
+
+.list_two li {
+     margin-bottom: 29px;
+}
+
+.list_two li::marker {
+   font-size: 13px; 
+   color: #F37021;
+}
+
+.list_two ul {
+    margin-left: 25px;
+    line-height: 25px;
+}
+
+.list_two p {
+    margin-bottom: 29px;
+}
+
+.open_modal_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 45px;
+    background-color: #034EA2;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin-top: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #E9ECEF;
+    background-image: url("/images/icons/footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 41px 20px 55px 20px;
+    min-height: 326px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 328px 157px 188px 247px;
+    gap: 0;
+}
+
+.footer_col:nth-child(1) { margin-left: 0; }
+.footer_col:nth-child(2) { margin-left: 50px; }
+.footer_col:nth-child(3) { margin-left: 60px; }
+.footer_col:nth-child(4) { margin-left: 60px; }
+
+/* ==== Общие стили для всех колонок ==== */
+.footer_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==== Высота колонок ==== */
+.col_one   { height: 230px; }
+.col_two   { height: 106px; }
+.col_three { height: 106px; }
+.footer_four { height: 225px; }
+
+/* ==== Первая колонка: навигация сверху, подвал снизу ==== */
+.col_one .nav_footer_col_one {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.col_one .footer_personal {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+/* ==== Ссылки ==== */
+.footer_col a {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.footer_col a:hover {
+    color: #F37021;
+}
+
+/* ==== Текст в подвале первой колонки ==== */
+.footer_personal p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.footer_personal a {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* ==== Телефон ==== */
+.phone p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    line-height: 1;
+}
+
+.phone span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    margin-top: 14px;
+}
+
+/* ==== Адрес ==== */
+.adress p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0 0 4px 0;
+}
+
+/* ==== Оверлей ==== */
+.modal_overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal_overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==== Окно ==== */
+.modal {
+    position: relative;
+    width: 760px;
+    height: 400px;
+    padding: 18px 20px;
+    background-color: #E9ECEF;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    transform: translateY(30px);
+    transition: transform 0.3s ease;
+}
+
+.modal_overlay.is-open .modal {
+    transform: translateY(0);
+}
+
+/* ==== Заголовок ==== */
+.modal_title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #034EA2;
+    margin: 0 0 40px 0;
+}
+
+/* ==== Поля ==== */
+.modal_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #034EA2;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: #141414;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.modal_input::placeholder {
+    color: #676767;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modal_input:focus {
+    border-color: #034EA2;
+    background-color: #ffffff;
+}
+
+/* ==== Кнопка ==== */
+.modal_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    background-color: #034EA2;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.modal_submit:hover {
+    background-color: #023a7a;
+}
+
+/* ==== Примечание ==== */
+.modal_note {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+    max-width: 460px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.modal_close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_close svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 992px) {
+    .grid_blocks {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .grid_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .blocks {
+        width: calc(50% - 5px); /* половина минус половина gap */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer_col:nth-child(2),
+    .footer_col:nth-child(3),
+    .footer_col:nth-child(4) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer_content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+}
+
+/* ==== Адаптив формы ==== */
+
+/* ==== Планшет: ≤ 640px ==== */
+@media (max-width: 640px) {
+    .modal {
+        width: 600px;
+        height: 364px;
+        padding: 16px 18px;
+    }
+
+    .modal_title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .modal_input {
+        height: 42px;
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+
+    .modal_submit {
+        height: 42px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .modal_note {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .modal_close {
+        top: 14px;
+        right: 16px;
+    }
+}
+
+/* ============================================================
+   Футер на 640px — финальная версия
+   ============================================================ */
+@media (max-width: 640px) {
+
+    .footer_content {
+        display: grid;
+        /* 3 равные колонки сверху, 2 области снизу */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav1 nav2 nav3"
+            "docs docs contacts";
+        gap: 56px 0;
+        padding: 48px 40px;
+        min-height: auto;
+        max-width: 960px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* --- Растворяем .col_one, чтобы его дети попали в родительский грид --- */
+    .col_one {
+        display: contents;
+    }
+
+    /* --- Верхняя строка: три колонки по 3 ссылки --- */
+    .nav_footer_col_one {
+        grid-area: nav1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 106px;
+        gap: 0;
+    }
+
+    .col_two {
+        grid-area: nav2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 106px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .col_three {
+        grid-area: nav3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 106px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    /* --- Нижняя левая: соглашение + копирайт --- */
+    .footer_personal {
+        grid-area: docs;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 328px;
+        height: 52px;
+        gap: 0;
+        align-self: start;
+        justify-self: start;
+    }
+
+    /* --- Нижняя правая: телефон + адрес --- */
+    .footer_four {
+        grid-area: contacts;
+        width: 187px;
+        height: 175px;
+        align-self: start;
+        justify-self: end;
+    }
+
+    /* Кнопка формы — по центру */
+    .open_modal_btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ============================================================
+   АДАПТИВ ДО 590px
+   HTML НЕ МЕНЯЕМ
+   ============================================================ */
+
+@media (max-width: 590px) {
+
+    /* ========================================================
+       HEADER
+       ======================================================== */
+
+    .menu_icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .login_icon {
+        width: 23px;
+        height: 25px;
+    }
+
+    .logo_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo_icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* ========================================================
+       MAIN
+       ======================================================== */
+
+    .main_content {
+        padding: 0 10px 40px 10px;
+    }
+
+
+    /* ========================================================
+       БЛОК "КОМПАНИЯ В ЦИФРАХ"
+       ======================================================== */
+
+    .grid_blocks {
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr) auto;
+
+        column-gap: 20px;
+        row-gap: 20px;
+
+        width: 100%;
+    }
+
+    .blocks {
+        width: auto;
+        min-width: 0;
+    }
+
+    /* Второй и четвёртый блок прижимаем вправо */
+
+    .grid_blocks .blocks:nth-child(even) {
+        justify-self: end;
+    }
+
+    /* Сам текст внутри остаётся слева */
+
+    .blocks h2,
+    .blocks p {
+        text-align: left;
+    }
+
+
+    /* ========================================================
+       КНОПКА ФОРМЫ ОБРАТНОЙ СВЯЗИ
+       ======================================================== */
+
+    .open_modal_btn {
+        width: calc(100% - 40px);
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    footer {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer_content {
+        position: relative;
+
+        width: 100%;
+        min-height: 500px;
+
+        display: block;
+
+        padding: 40px 20px 50px;
+
+        margin: 0;
+    }
+
+
+    /* ========================================================
+       ЛЕВЫЙ ВЕРХНИЙ БЛОК
+
+       Новинки 77
+       Каталог
+       Хиты
+       Сотрудничество
+       Контакты
+       ======================================================== */
+
+    .col_one {
+        display: block;
+
+        width: auto;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .nav_footer_col_one {
+        position: absolute;
+
+        left: 20px;
+        top: 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        width: 128px;
+        height: 150px;
+
+        margin: 0;
+    }
+
+    .nav_footer_col_one a {
+        display: block;
+    }
+
+
+    /* ========================================================
+       ПРАВЫЙ ВЕРХНИЙ БЛОК
+
+       Акции
+       Новости
+       Вопрос-ответ
+       Документы
+       ======================================================== */
+
+    .col_two {
+        position: absolute;
+
+        top: 40px;
+        right: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        width: 107px;
+        height: 118px;
+
+        margin: 0;
+    }
+
+    .col_two a {
+        display: block;
+    }
+
+
+    /* ========================================================
+       Сотрудничество + Контакты
+
+       Они физически находятся в .col_three,
+       но визуально должны быть в левом верхнем блоке.
+       ======================================================== */
+
+    .col_three {
+        position: static;
+
+        display: block;
+
+        width: auto;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .col_three a {
+        position: absolute;
+
+        left: 20px;
+
+        margin: 0;
+    }
+
+    /* Сотрудничество */
+
+    .col_three a:nth-child(1) {
+        top: 145px;
+    }
+
+    /* Контакты */
+
+    .col_three a:nth-child(2) {
+        top: 185px;
+    }
+
+    /* ========================================================
+       Документы
+
+       Физически находится в .col_three,
+       но визуально переносим вправо.
+       ======================================================== */
+
+    .col_three a:nth-child(3) {
+        position: absolute;
+
+        left: auto;
+        right: 20px;
+
+        top: 218px;
+
+        width: 107px;
+
+        margin: 0;
+    }
+
+
+    /* ========================================================
+       СОГЛАШЕНИЕ + КОПИРАЙТ
+       ======================================================== */
+
+    .footer_personal {
+        position: absolute;
+
+        left: 20px;
+        top: 230px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 11px;
+
+        width: 328px;
+        height: 52px;
+
+        margin: 0;
+    }
+
+    .footer_personal a {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .footer_personal p {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+
+    /* ========================================================
+       FOOTER FOUR
+
+       Внутренние .phone и .adress позиционируем отдельно.
+       ======================================================== */
+
+    .footer_four {
+        display: block;
+
+        width: auto;
+        height: auto;
+
+        margin: 0;
+    }
+
+
+    /* ========================================================
+       ТЕЛЕФОН
+       ======================================================== */
+
+    .phone {
+        position: absolute;
+
+        left: 20px;
+        top: 350px;
+
+        width: 138px;
+        height: 53px;
+
+        margin: 0;
+    }
+
+    .phone p {
+        margin: 0;
+
+        font-family: 'Manrope', sans-serif;
+        font-size: 16px;
+        line-height: 1;
+
+        color: #000000;
+    }
+
+    .phone span {
+        display: block;
+
+        margin-top: 14px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        color: #000000;
+    }
+
+
+    /* ========================================================
+       АДРЕС
+       ======================================================== */
+
+    .adress {
+        position: absolute;
+
+        right: 20px;
+        top: 350px;
+
+        width: 187px;
+        height: 86px;
+
+        margin: 0;
+    }
+
+    .adress p {
+        margin: 0 0 4px 0;
+
+        font-family: 'Manrope', sans-serif;
+        font-size: 16px;
+        line-height: 1.25;
+
+        color: #000000;
+    }
+}
