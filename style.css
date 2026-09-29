@@ -1,9 +1,12 @@
+/* ============================================================
+   RESET
+   ============================================================ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -12,9 +15,13 @@ body {
 }
 
 body {
-    margin: 0;
     background-color: #D2D2D2;
 }
+
+
+/* ============================================================
+   PAGE
+   ============================================================ */
 
 .page {
     width: 100%;
@@ -22,10 +29,21 @@ body {
     margin: 0 auto;
 }
 
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
 header {
     height: 140px;
     background-color: #E9ECEF;
-    padding: 21px 20px 10px 20px;
+    padding: 21px 20px 10px;
+}
+
+.high_el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu_button {
@@ -55,30 +73,24 @@ header {
     height: 50px;
 }
 
-.high_el {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .search {
-    margin-top: 9px;
     position: relative;
+    margin-top: 9px;
 }
 
 .search_icon {
-position: absolute;
+    position: absolute;
     left: 17px;
     top: 13px;
 }
 
 .search input {
     width: 100%;
-    border: 0;
-    border-radius: 5px;
-    background-color: white;
     height: 40px;
     padding: 12px 15px 10px 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
     outline: 0;
 }
 
@@ -92,7 +104,6 @@ position: absolute;
 }
 
 .search_button {
-    cursor: pointer;
     position: absolute;
     left: 17px;
     top: 13px;
@@ -100,65 +111,89 @@ position: absolute;
     height: 18px;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
+
+
+/* ============================================================
+   MAIN
+   ============================================================ */
 
 .main_content {
     background-color: #F4F6F9;
-    padding: 0 20px 100px 20px;
+    padding: 0 20px 100px;
 }
 
-.breadcrumbs ol{
-    list-style: none;
+
+/* Breadcrumbs */
+
+.breadcrumbs ol {
     display: flex;
     gap: 5px;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: #676767;
 }
 
 .breadcrumbs a {
-    text-decoration: none;
-    color: #676767;
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0;
+    color: #676767;
+    text-decoration: none;
 }
 
+
+/* Заголовок */
+
 .main_content h1 {
+    padding-bottom: 20px;
+
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0;
     color: #141414;
-    padding-bottom: 20px;
 }
 
+
+/* Основной заголовок */
+
 .headline {
-     font-family: 'Manrope', sans-serif;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 25px;
-     letter-spacing: 0;
-     color: #034EA2;
-     height: 50px;
+    height: 50px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #034EA2;
 }
+
+
+/* Основной текст */
 
 .p_text {
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
     line-height: 25px;
     letter-spacing: 0;
     color: #000000;
 }
+
+
+/* Компания в цифрах */
 
 .info_block {
     margin-top: 40px;
@@ -166,14 +201,15 @@ position: absolute;
 }
 
 .h2_info_block {
+    height: 25px;
+    margin-bottom: 19px;
+
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 25px;
     letter-spacing: 0;
     color: #034EA2;
-    height: 25px;
-    margin-bottom: 19px;
 }
 
 .grid_blocks {
@@ -185,86 +221,104 @@ position: absolute;
 .blocks {
     width: 100%;
 }
+
 .blocks h2 {
-   font-family: 'Manrope', sans-serif;
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 25px;
-   letter-spacing: 0;
-   color: #F37021;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #F37021;
 }
 
 .blocks p {
-   font-family: 'Manrope', sans-serif;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 20px;
-   letter-spacing: 0;
-   color: #000000;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000000;
 }
 
+
+/* Изображения */
+
 img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
     margin-bottom: 19px;
 }
 
+
+/* Описание */
+
 .description h2 {
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 25px;
     letter-spacing: 0;
     color: #034EA2;
 }
 
 .description p {
+    margin: 20px 0 40px;
+
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
     line-height: 25px;
     letter-spacing: 0;
     color: #000000;
-    margin: 20px 0 40px 0;
 }
 
 .description .list_one p {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .description ul {
     padding-left: 25px;
-    line-height: 25px;
+
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
     letter-spacing: 0;
     color: #034EA2;
 }
 
 .description li::marker {
-    font-size: 13px;;
+    font-size: 13px;
 }
 
 .list_one {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     height: 150px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.list_two p, ul{
+
+/* Второй список */
+
+.list_two p,
+.list_two ul {
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 25px;
     letter-spacing: 0;
     color: #000000;
+}
+
+.list_two p {
+    margin-bottom: 29px;
 }
 
 .list_two span {
@@ -273,12 +327,12 @@ img {
 }
 
 .list_two li {
-     margin-bottom: 29px;
+    margin-bottom: 29px;
 }
 
 .list_two li::marker {
-   font-size: 13px; 
-   color: #F37021;
+    font-size: 13px;
+    color: #F37021;
 }
 
 .list_two ul {
@@ -286,140 +340,266 @@ img {
     line-height: 25px;
 }
 
-.list_two p {
-    margin-bottom: 29px;
-}
+
+/* Кнопка обратной связи */
 
 .open_modal_btn {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 300px;
     height: 45px;
-    background-color: #034EA2;
+    margin-top: 50px;
+    padding: 0;
+
     border: none;
     border-radius: 5px;
-    padding: 0;
-    margin-top: 50px;
+    background-color: #034EA2;
+
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: 0;
     color: #FFFFFF;
+
     cursor: pointer;
 }
 
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
 footer {
+    position: relative;
+
+    width: 100%;
+    height: 326px;
+
     background-color: #E9ECEF;
     background-image: url("/images/icons/footer.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    overflow: hidden;
 }
 
 .footer_content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 41px 20px 55px 20px;
-    min-height: 326px;
-    box-sizing: border-box;
+    position: relative;
 
-    display: grid;
-    grid-template-columns: 328px 157px 188px 247px;
-    gap: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.footer_col:nth-child(1) { margin-left: 0; }
-.footer_col:nth-child(2) { margin-left: 50px; }
-.footer_col:nth-child(3) { margin-left: 60px; }
-.footer_col:nth-child(4) { margin-left: 60px; }
 
-.footer_col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.col_one   { height: 230px; }
-.col_two   { height: 106px; }
-.col_three { height: 106px; }
-.footer_four { height: 225px; }
-
-.col_one .nav_footer_col_one {
-    display: flex;
-    flex-direction: column;
-    gap: 29px;
-}
-
-.col_one .footer_personal {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-}
+/* Общие ссылки */
 
 .footer_col a {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
     color: #000000;
     text-decoration: none;
-    line-height: 100%;
-    letter-spacing: 0;
 }
 
 .footer_col a:hover {
     color: #F37021;
 }
 
-.footer_personal p {
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    color: #000000;
+
+/* Левая колонка */
+
+.col_one {
+    position: absolute;
+    left: 2.083%;
+    top: 41px;
+
+    width: 328px;
+    height: 230px;
+}
+
+
+/* Новинки / Каталог / Хиты */
+
+.nav_footer_col_one {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 128px;
+    height: 106px;
+}
+
+.nav_footer_col_one a {
+    display: block;
+}
+
+
+/* Соглашение + копирайт */
+
+.footer_personal {
+    position: absolute;
+    left: 0;
+    top: 178px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    width: 328px;
+    height: 52px;
 }
 
 .footer_personal a {
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
     color: #000000;
+    text-decoration: none;
+}
+
+.footer_personal p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+/* Акции / Новости / Вопрос-ответ */
+
+.col_two {
+    position: absolute;
+    left: 41.458%;
+    top: 41px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 107px;
+    height: 106px;
+}
+
+
+/* Сотрудничество / Контакты / Документы */
+
+.col_three {
+    position: absolute;
+    left: 58.854%;
+    top: 41px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 128px;
+    height: 106px;
+}
+
+
+/* Правая колонка */
+
+.footer_four {
+    position: absolute;
+    right: 2.083%;
+    top: 41px;
+
+    width: 187px;
+    height: 225px;
+}
+
+
+/* Телефон */
+
+.phone {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 187px;
+    height: 53px;
 }
 
 .phone p {
+    margin: 0;
+
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
     color: #000000;
-    margin: 0;
-    line-height: 1;
 }
 
 .phone span {
+    display: block;
+    margin-top: 9px;
+
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    line-height: 22px;
     color: #000000;
-    display: block;
-    margin-top: 14px;
+}
+
+
+/* Адрес */
+
+.adress {
+    position: absolute;
+    left: 0;
+    top: 139px;
+
+    width: 187px;
+    height: 86px;
 }
 
 .adress p {
+    margin: 0 0 10px;
+
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
     color: #000000;
-    margin: 0 0 4px 0;
 }
 
-/* ==== Оверлей ==== */
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+
 .modal_overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.5);
 
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
 }
 
 .modal_overlay.is-open {
@@ -427,17 +607,18 @@ footer {
     visibility: visible;
 }
 
-/* ==== Окно ==== */
 .modal {
     position: relative;
+
     width: 760px;
     height: 400px;
     padding: 18px 20px;
+
     background-color: #E9ECEF;
     border-radius: 10px;
-    box-sizing: border-box;
 
     transform: translateY(30px);
+
     transition: transform 0.3s ease;
 }
 
@@ -445,16 +626,21 @@ footer {
     transform: translateY(0);
 }
 
-/* ==== Заголовок ==== */
+
+/* Заголовок */
+
 .modal_title {
+    margin: 0 0 40px;
+
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: #034EA2;
-    margin: 0 0 40px 0;
 }
 
-/* ==== Поля ==== */
+
+/* Форма */
+
 .modal_form {
     display: flex;
     flex-direction: column;
@@ -463,16 +649,19 @@ footer {
 .modal_input {
     width: 100%;
     height: 50px;
+    margin-bottom: 40px;
     padding: 0 15px;
+
     border: 1px solid #034EA2;
     border-radius: 5px;
+
     background-color: #FFFFFF;
+
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color: #141414;
+
     outline: none;
-    box-sizing: border-box;
-    margin-bottom: 40px;
 }
 
 .modal_input::placeholder {
@@ -483,56 +672,77 @@ footer {
 
 .modal_input:focus {
     border-color: #034EA2;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
-/* ==== Кнопка ==== */
+
+/* Кнопка */
+
 .modal_submit {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 200px;
     height: 45px;
-    background-color: #034EA2;
+    margin-bottom: 24px;
+    padding: 0;
+
     border: none;
     border-radius: 5px;
-    padding: 0;
+
+    background-color: #034EA2;
+
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     color: #FFFFFF;
+
     cursor: pointer;
-    margin-bottom: 24px;
 }
 
 .modal_submit:hover {
     background-color: #023a7a;
 }
 
-/* ==== Примечание ==== */
+
+/* Примечание */
+
 .modal_note {
+    max-width: 460px;
+    margin: 0;
+
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
-    color: #000000;
-    margin: 0;
-    max-width: 460px;
     line-height: 20px;
     letter-spacing: 0;
+    color: #000000;
 }
+
+.modal_note a {
+    color: #000000;
+}
+
+
+/* Кнопка закрытия */
 
 .modal_close {
     position: absolute;
     top: 18px;
     right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 24px;
     height: 24px;
-    background: none;
-    border: none;
     padding: 0;
+
+    border: none;
+    background: none;
+
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .modal_close svg {
@@ -540,55 +750,87 @@ footer {
     height: 20px;
 }
 
-.modal_note a {
-    color: black;
-}
+
+/* ============================================================
+   MEDIA QUERIES
+   Здесь находятся ВСЕ адаптивные стили.
+   ============================================================ */
+
+
+/* ============================================================
+   ≤ 992px
+   ============================================================ */
 
 @media (max-width: 992px) {
+
+    /* Main */
+
     .grid_blocks {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-}
 
-@media (max-width: 460px) {
-    .grid_blocks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
+
+    /* Footer */
+
+    footer {
+        height: 433px;
     }
 
-    .blocks {
-        width: calc(50% - 5px); /* половина минус половина gap */
-    }
-}
-
-@media (max-width: 992px) {
     .footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        height: 100%;
     }
 
-    .footer_col:nth-child(2),
-    .footer_col:nth-child(3),
-    .footer_col:nth-child(4) {
-        margin-left: 0;
+    .col_one {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .nav_footer_col_one {
+        left: 40px;
+        top: 48px;
+    }
+
+    .col_two {
+        left: auto;
+        right: 80px;
+        top: 48px;
+    }
+
+    .col_three {
+        left: 264px;
+        top: 48px;
+    }
+
+    .footer_personal {
+        left: 40px;
+        top: 210px;
+    }
+
+    .footer_four {
+        left: auto;
+        top: 210px;
+    }
+
+    .adress {
+        top: 86px;
+    }
+
+    .modal {
+        margin: 0 20px 0 20px;
     }
 }
 
-@media (max-width: 576px) {
-    .footer_content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 30px 20px;
-    }
-}
 
-/* ==== Адаптив формы ==== */
+/* ============================================================
+   ≤ 640px
+   ============================================================ */
 
-/* ==== Планшет: ≤ 640px ==== */
 @media (max-width: 640px) {
+
+    /* Modal */
+
     .modal {
         width: 600px;
         height: 364px;
@@ -596,8 +838,8 @@ footer {
     }
 
     .modal_title {
-        font-size: 20px;
         margin-bottom: 30px;
+        font-size: 20px;
     }
 
     .modal_input {
@@ -608,8 +850,8 @@ footer {
 
     .modal_submit {
         height: 42px;
-        font-size: 16px;
         margin-bottom: 20px;
+        font-size: 16px;
     }
 
     .modal_note {
@@ -621,102 +863,248 @@ footer {
         top: 14px;
         right: 16px;
     }
-}
 
-/* ============================================================
-   Футер на 640px — финальная версия
-   ============================================================ */
-@media (max-width: 640px) {
+
+    /* Footer */
+
+    footer {
+        height: 433px;
+    }
 
     .footer_content {
-        display: grid;
-        /* 3 равные колонки сверху, 2 области снизу */
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "nav1 nav2 nav3"
-            "docs docs contacts";
-        gap: 56px 0;
-        padding: 48px 40px;
-        min-height: auto;
-        max-width: 960px;
-        margin: 0 auto;
-        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 0;
     }
 
-    /* --- Растворяем .col_one, чтобы его дети попали в родительский грид --- */
-    .col_one {
-        display: contents;
-    }
-
-    /* --- Верхняя строка: три колонки по 3 ссылки --- */
     .nav_footer_col_one {
-        grid-area: nav1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        left: 40px;
+        top: 48px;
+
+        width: 128px;
         height: 106px;
-        gap: 0;
+
+        gap: 20px;
     }
 
     .col_two {
-        grid-area: nav2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        left: auto;
+        right: 80px;
+        top: 48px;
+
+        width: 107px;
         height: 106px;
-        width: auto;
-        margin-left: 0;
+
+        gap: 20px;
     }
 
     .col_three {
-        grid-area: nav3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        left: 264px;
+        top: 48px;
+
+        width: 128px;
         height: 106px;
-        width: auto;
-        margin-left: 0;
+
+        gap: 20px;
     }
 
-    /* --- Нижняя левая: соглашение + копирайт --- */
     .footer_personal {
-        grid-area: docs;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        left: 40px;
+        top: 210px;
+
         width: 328px;
         height: 52px;
-        gap: 0;
-        align-self: start;
-        justify-self: start;
+
+        gap: 11px;
     }
 
-    /* --- Нижняя правая: телефон + адрес --- */
     .footer_four {
-        grid-area: contacts;
+        right: 40px;
+        left: auto;
+        top: 210px;
+
         width: 187px;
         height: 175px;
-        align-self: start;
-        justify-self: end;
     }
 
-    /* Кнопка формы — по центру */
-    .open_modal_btn {
-        margin-left: auto;
-        margin-right: auto;
+    .phone {
+        left: 0;
+        top: 0;
+
+        width: 138px;
+        height: 53px;
+    }
+
+    .phone span {
+        margin-top: 9px;
+    }
+
+    .adress {
+        left: 0;
+        top: 89px;
+
+        width: 187px;
+        height: 86px;
+    }
+
+    .adress p {
+        margin-bottom: 10px;
     }
 }
 
+
 /* ============================================================
-   АДАПТИВ ДО 590px
-   HTML НЕ МЕНЯЕМ
+   ≤ 460px
+   ============================================================ */
+
+@media (max-width: 460px) {
+
+    /* Main */
+
+    .grid_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .blocks {
+        width: calc(50% - 5px);
+    }
+
+
+    /* Footer */
+
+    footer {
+        height: 467px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer_content {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+
+    /* Верхняя левая группа */
+
+    .nav_footer_col_one {
+        left: 40px;
+        top: 40px;
+
+        width: 128px;
+        height: 150px;
+
+        gap: 10px;
+    }
+
+
+    /* Верхняя правая группа */
+
+    .col_two {
+        left: auto;
+        right: 40px;
+        top: 39px;
+
+        width: 107px;
+        height: 118px;
+
+        gap: 10px;
+    }
+
+
+    /* Сотрудничество / Контакты / Документы */
+
+    .col_three {
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .col_three a {
+        position: absolute;
+        display: block;
+    }
+
+    .col_three a:nth-child(1) {
+        left: 20px;
+        top: 136px;
+    }
+
+    .col_three a:nth-child(2) {
+        left: 20px;
+        top: 168px;
+    }
+
+    .col_three a:nth-child(3) {
+        left: auto;
+        right: 40px;
+        top: 135px;
+
+        width: 87px;
+    }
+
+
+    /* Соглашение */
+
+    .footer_personal {
+        left: 40px;
+        top: 250px;
+
+        width: 328px;
+        height: 52px;
+
+        gap: 11px;
+    }
+
+
+    /* Контакты */
+
+    .footer_four {
+        left: 40px;
+        top: 342px;
+
+        width: 380px;
+        height: 86px;
+    }
+
+    .phone {
+        left: 0;
+        top: 0;
+
+        width: 138px;
+        height: 53px;
+    }
+
+    .phone span {
+        margin-top: 9px;
+    }
+
+    .adress {
+        left: 193px;
+        top: 0;
+
+        width: 187px;
+        height: 86px;
+    }
+
+    .adress p {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ============================================================
+   ≤ 590px
    ============================================================ */
 
 @media (max-width: 590px) {
 
-    /* ========================================================
-       HEADER
-       ======================================================== */
+    /* Header */
 
     .menu_icon {
         width: 25px;
@@ -739,28 +1127,20 @@ footer {
     }
 
 
-    /* ========================================================
-       MAIN
-       ======================================================== */
+    /* Main */
 
     .main_content {
-        padding: 0 10px 40px 10px;
+        padding: 0 10px 40px;
     }
-
-
-    /* ========================================================
-       БЛОК "КОМПАНИЯ В ЦИФРАХ"
-       ======================================================== */
 
     .grid_blocks {
         display: grid;
-
         grid-template-columns: minmax(0, 1fr) auto;
+
+        width: 100%;
 
         column-gap: 20px;
         row-gap: 20px;
-
-        width: 100%;
     }
 
     .blocks {
@@ -768,37 +1148,27 @@ footer {
         min-width: 0;
     }
 
-    /* Второй и четвёртый блок прижимаем вправо */
-
     .grid_blocks .blocks:nth-child(even) {
         justify-self: end;
     }
-
-    /* Сам текст внутри остаётся слева */
 
     .blocks h2,
     .blocks p {
         text-align: left;
     }
 
-
-    /* ========================================================
-       КНОПКА ФОРМЫ ОБРАТНОЙ СВЯЗИ
-       ======================================================== */
-
     .open_modal_btn {
         width: calc(100% - 40px);
-
         margin-left: 20px;
         margin-right: 20px;
     }
 
 
-    /* ========================================================
-       FOOTER
-       ======================================================== */
+    /* Footer */
 
     footer {
+        height: 500px;
+
         background-size: cover;
         background-position: center;
     }
@@ -807,32 +1177,21 @@ footer {
         position: relative;
 
         width: 100%;
+        height: 100%;
         min-height: 500px;
 
-        display: block;
-
-        padding: 40px 20px 50px;
-
+        padding: 0;
         margin: 0;
     }
 
 
-    /* ========================================================
-       ЛЕВЫЙ ВЕРХНИЙ БЛОК
-
-       Новинки 77
-       Каталог
-       Хиты
-       Сотрудничество
-       Контакты
-       ======================================================== */
+    /* Верхняя левая группа */
 
     .col_one {
-        display: block;
+        position: static;
 
         width: auto;
         height: auto;
-
         margin: 0;
     }
 
@@ -858,14 +1217,7 @@ footer {
     }
 
 
-    /* ========================================================
-       ПРАВЫЙ ВЕРХНИЙ БЛОК
-
-       Акции
-       Новости
-       Вопрос-ответ
-       Документы
-       ======================================================== */
+    /* Верхняя правая группа */
 
     .col_two {
         position: absolute;
@@ -889,12 +1241,7 @@ footer {
     }
 
 
-    /* ========================================================
-       Сотрудничество + Контакты
-
-       Они физически находятся в .col_three,
-       но визуально должны быть в левом верхнем блоке.
-       ======================================================== */
+    /* Сотрудничество / Контакты / Документы */
 
     .col_three {
         position: static;
@@ -903,54 +1250,35 @@ footer {
 
         width: auto;
         height: auto;
-
         margin: 0;
     }
 
     .col_three a {
         position: absolute;
-
         left: 20px;
 
         margin: 0;
+        padding-top: 20px;
     }
-
-    /* Сотрудничество */
 
     .col_three a:nth-child(1) {
         top: 145px;
     }
 
-    /* Контакты */
-
     .col_three a:nth-child(2) {
         top: 185px;
     }
 
-    /* ========================================================
-       Документы
-
-       Физически находится в .col_three,
-       но визуально переносим вправо.
-       ======================================================== */
-
     .col_three a:nth-child(3) {
-        position: absolute;
-
         left: auto;
         right: 20px;
-
-        top: 218px;
+        top: 150px;
 
         width: 107px;
-
-        margin: 0;
     }
 
 
-    /* ========================================================
-       СОГЛАШЕНИЕ + КОПИРАЙТ
-       ======================================================== */
+    /* Соглашение */
 
     .footer_personal {
         position: absolute;
@@ -966,7 +1294,7 @@ footer {
         width: 328px;
         height: 52px;
 
-        margin: 0;
+        margin-top: 40px;
     }
 
     .footer_personal a {
@@ -980,25 +1308,17 @@ footer {
     }
 
 
-    /* ========================================================
-       FOOTER FOUR
-
-       Внутренние .phone и .adress позиционируем отдельно.
-       ======================================================== */
+    /* Контакты */
 
     .footer_four {
+        position: static;
+
         display: block;
 
         width: auto;
         height: auto;
-
         margin: 0;
     }
-
-
-    /* ========================================================
-       ТЕЛЕФОН
-       ======================================================== */
 
     .phone {
         position: absolute;
@@ -1018,7 +1338,6 @@ footer {
         font-family: 'Manrope', sans-serif;
         font-size: 16px;
         line-height: 1;
-
         color: #000000;
     }
 
@@ -1029,34 +1348,25 @@ footer {
 
         font-size: 16px;
         font-weight: 600;
-
         color: #000000;
     }
 
-
-    /* ========================================================
-       АДРЕС
-       ======================================================== */
-
     .adress {
         position: absolute;
-
+        left: auto;
         right: 20px;
         top: 350px;
-
         width: 187px;
         height: 86px;
-
         margin: 0;
     }
 
     .adress p {
-        margin: 0 0 4px 0;
+        margin: 0 0 4px;
 
         font-family: 'Manrope', sans-serif;
         font-size: 16px;
         line-height: 1.25;
-
         color: #000000;
     }
 }
