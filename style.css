@@ -335,20 +335,17 @@ footer {
 .footer_col:nth-child(3) { margin-left: 60px; }
 .footer_col:nth-child(4) { margin-left: 60px; }
 
-/* ==== Общие стили для всех колонок ==== */
 .footer_col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* ==== Высота колонок ==== */
 .col_one   { height: 230px; }
 .col_two   { height: 106px; }
 .col_three { height: 106px; }
 .footer_four { height: 225px; }
 
-/* ==== Первая колонка: навигация сверху, подвал снизу ==== */
 .col_one .nav_footer_col_one {
     display: flex;
     flex-direction: column;
@@ -360,7 +357,7 @@ footer {
     flex-direction: column;
     gap: 11px;
 }
-/* ==== Ссылки ==== */
+
 .footer_col a {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
@@ -375,7 +372,6 @@ footer {
     color: #F37021;
 }
 
-/* ==== Текст в подвале первой колонки ==== */
 .footer_personal p {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
@@ -388,7 +384,6 @@ footer {
     color: #000000;
 }
 
-/* ==== Телефон ==== */
 .phone p {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
@@ -405,7 +400,6 @@ footer {
     margin-top: 14px;
 }
 
-/* ==== Адрес ==== */
 .adress p {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
@@ -544,6 +538,10 @@ footer {
 .modal_close svg {
     width: 20px;
     height: 20px;
+}
+
+.modal_note a {
+    color: black;
 }
 
 @media (max-width: 992px) {
