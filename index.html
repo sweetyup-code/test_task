@@ -9,10 +9,12 @@
     <link rel="icon" type="image/svg+xml" href="/images/icons/new-favicon.svg">
 </head>
 <body>
+    <!-- обёртка всей страницы -->
     <div class="page">
+        <!-- разделяю header на 2 блока -->
         <header>
             <div class="high_el">
-                <button class="menu_button">
+                <button id="menu_button" class="menu_button">
                     <svg class="menu_icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="5" fill="#034EA2"/>
                     <rect x="7" y="11" width="26" height="2" rx="1" fill="white"/>
@@ -23,7 +25,7 @@
                 <a href="/index.html" class="logo_icon">
                     <img src="/images/icons/new-favicon.svg" alt="Рыжий кот">
                 </a>
-                <button class="menu_button">
+                <button id="login_button" class="menu_button">
                     <svg class="login_icon" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.40418 3.0566H20.0428C20.7457 3.0566 21.3156 2.48674 21.3156 1.78377V1.27283C21.3156 0.569861 20.7457 0 20.0428 0H8.40418C7.70121 0 7.13135 0.569861 7.13135 1.27283V1.78377C7.13135 2.48674 7.70122 3.0566 8.40418 3.0566Z" fill="#034EA2"/>
                     <path d="M7.13135 1.27283V11.5529C7.13135 12.2559 7.70121 12.8257 8.40418 12.8257H8.91513C9.61809 12.8257 10.188 12.2559 10.188 11.5529V1.27283C10.188 0.569861 9.61809 0 8.91513 0H8.40418C7.70122 0 7.13135 0.569874 7.13135 1.27283Z" fill="#034EA2"/>
@@ -62,6 +64,7 @@
         </header>
         <main>
             <div class="main_content">
+                <!-- навигация через список для того что бы в будущем дианмически управлять элементами списка -->
                  <nav class="breadcrumbs" aria-label="Хлебные крошки">
                     <ol>
                         <li>
@@ -86,6 +89,8 @@
                     Начиная с 2012 года «Рыжий Кот» стоит на страже счастливого детства. У нас Вы найдете все необходимое для полноценного и своевременного развития, а также интересного и веселого досуга Вашего ребенка. 
                     Мы предлагаем широкий ассортимент детской продукции, включающий более 8 000 наименований и занимающий свыше 20 000 кв.м. складских помещений!
                 </p>
+                <!-- для более удобного расположения на странице и 
+                адаптивности сделал 4 отдельных блока для работы через грид -->
                 <div class="info_block">
                     <h2 class="h2_info_block">
                         Компания в цифрах
@@ -162,6 +167,8 @@
         </main>
         <footer>
             <div class="footer_content">
+                <!-- Footer так же раздлеил на 4 отделььных блока для 
+                более удобного позиционирования через grid -->
                 <div class="footer_col col_one">
                     <div class="nav_footer_col_one">
                         <a href="/index.html">Новинки 77</a>
@@ -196,6 +203,7 @@
             </div>
         </footer>
     </div>
+    <!-- popup окно -->
     <div class="modal_overlay" id="modal">
     <div class="modal">
         <button class="modal_close" type="button" aria-label="Закрыть">
@@ -205,16 +213,31 @@
         </button>
         <h2 class="modal_title">Форма обратной связи</h2>
 
-        <form class="modal_form" action="#" method="post">
-            <input class="modal_input" type="text" name="text" placeholder="Ваше имя" required>
+        <form class="modal_form" action="#" method="post" novalidate>
+            <input class="modal_input" type="text" name="name" placeholder="Ваше имя" required>
+             <p class="error_message"></p>
             <input class="modal_input" type="email" name="email" placeholder="Ваш e-mail" required>
-
+             <p class="error_message"></p>
             <button class="modal_submit" type="submit">Отправить</button>
         </form>
 
         <p class="modal_note">Нажимая кнопку Отправить вы даёте <a href="/images/docs/personal.pdf">согласие на обработку персональных данных</a></p>
     </div>
-</div>
+    </div>
+    <!-- второе popup окно -->
+    <div class="modal_overlay" id="ups_modal">
+    <div class="modal">
+        <button class="modal_close" type="button" aria-label="Закрыть">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L18 18M18 2L2 18" stroke="#141414" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="no_content">
+        <h2>УПС...</h2>
+        <p>Раздел находиться в разработке, попробуйте вернуться сюда позже!</p>
+        </div>
+    </div>
+    </div>
     <script src="/main.js"></script>
 </body>
 </html>
